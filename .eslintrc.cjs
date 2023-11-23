@@ -4,7 +4,6 @@ module.exports = {
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended-type-checked',
-        'plugin:@typescript-eslint/stylistic-type-checked',
         'plugin:react-hooks/recommended',
         'plugin:react/recommended',
         'plugin:react/jsx-runtime'
@@ -14,7 +13,10 @@ module.exports = {
     parserOptions: {
         project: ["tsconfig.json", "tsconfig.node.json"]
     },
-    plugins: ['react-refresh'],
+    plugins: [
+        'react-refresh',
+        '@stylistic/ts'
+    ],
     rules: {
         'react-refresh/only-export-components': [
             'warn',
@@ -22,6 +24,7 @@ module.exports = {
         ],
         'react/react-in-jsx-scope': 'off',
         'quotes': ['error', 'single'],
-        "@typescript-eslint/prefer-nullish-coalescing": "off"
+        '@typescript-eslint/prefer-nullish-coalescing': 'off',
+        '@stylistic/ts/indent': ['error', 4],
     },
 }

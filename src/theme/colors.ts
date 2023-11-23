@@ -2,19 +2,19 @@ import { PaletteOptions } from '@mui/material';
 
 declare module '@mui/material/styles' {
     interface Palette {
-      tertiary: Palette['primary'];
+        tertiary: Palette['primary'];
     }
   
     interface PaletteOptions {
-      tertiary?: PaletteOptions['primary'];
+        tertiary?: PaletteOptions['primary'];
     }
 }
 
 declare module '@mui/material/Button' {
     interface ButtonPropsColorOverrides {
-      tertiary: true;
+        tertiary: true;
     }
-  }
+}
 
 const colors: PaletteOptions = {
     mode: 'light',
