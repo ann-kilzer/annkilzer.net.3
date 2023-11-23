@@ -1,8 +1,8 @@
-import { FC } from "react";
-import BottomNavigation from "@mui/material/BottomNavigation"
-import BottomNavigationAction from "@mui/material/BottomNavigationAction"
-import Paper from "@mui/material/Paper"
-import { Github, Instagram, Linkedin, Palette } from "iconoir-react";
+import { FC } from 'react';
+import BottomNavigation from '@mui/material/BottomNavigation'
+import BottomNavigationAction from '@mui/material/BottomNavigationAction'
+import Paper from '@mui/material/Paper'
+import { Github, Instagram, Linkedin, Palette } from 'iconoir-react';
 
 
 const Footer: FC = () => {

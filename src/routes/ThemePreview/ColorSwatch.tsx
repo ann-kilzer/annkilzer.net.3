@@ -1,4 +1,4 @@
-import Paper from "@mui/material/Paper"
+import Paper from '@mui/material/Paper'
 import { Theme, styled } from '@mui/material/styles';
 
 interface SwatchProps {

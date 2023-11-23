@@ -1,5 +1,5 @@
-import Container from "@mui/material/Container"
-import { FC } from "react"
+import Container from '@mui/material/Container'
+import { FC } from 'react'
 
 const NotFound: FC = () => {
     return <Container>

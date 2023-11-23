@@ -1,9 +1,9 @@
-import { FC } from "react";
-import AppBar from "@mui/material/AppBar"
+import { FC } from 'react';
+import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
-import Typography from "@mui/material/Typography";
+import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -19,7 +19,7 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 const Header: FC = () => {
     return <AppBar position="static">
         <StyledToolbar>
-            <NavLink to="/" style={{ textDecoration: 'none', color: "white" }}>
+            <NavLink to="/" style={{ textDecoration: 'none', color: 'white' }}>
                 <Typography variant="h1">Ann Kilzer</Typography>
             </NavLink>
         </StyledToolbar>

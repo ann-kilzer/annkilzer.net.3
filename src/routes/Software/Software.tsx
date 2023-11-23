@@ -1,10 +1,10 @@
-import { FC } from "react";
-import Container from "@mui/material/Container"
-import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
-import List from "@mui/material/List"
-import ListItem from "@mui/material/ListItem"
-import Link from "@mui/material/Link";
+import { FC } from 'react';
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import Link from '@mui/material/Link';
 
 
 const Software: FC = () => {
@@ -13,21 +13,29 @@ const Software: FC = () => {
             <Typography variant="h2">Software</Typography>
 
             <Typography variant="h3">Personal Projects</Typography>
-            <Typography variant="body1">Check out my <Link href="https://github.com/ann-kilzer" target="_blank">GitHub page</Link> to see my hobby projects.</Typography>
+            <Typography variant="body1">Check out my
+                <Link href="https://github.com/ann-kilzer" target="_blank">
+                    GitHub page</Link> to see my hobby projects.
+            </Typography>
 
             <Typography variant="h3">Publications & Presentations</Typography>
             <List>
                 <ListItem>
-                    "Canary in a coal mine: Building infrastructure resiliency with canary data reloads." Velocity. San Jose, California. June 22, 2017.
+                    &ldquo;Canary in a coal mine: Building infrastructure resiliency with canary data reloads.&rdquo; Velocity. San Jose, California. June 22, 2017.
                 </ListItem>
                 <ListItem>
-                    Joseph A. Calandrino, Ann Kilzer, Arvind Narayanan, Edward W. Felten, Vitaly Shmatikov. "You Might Also Like: Privacy Risks of Collaborative Filtering." S&P. Oakland, CA: IEEE, May 2011. Press: The Economist Blog June 15, 2011.
+                    Joseph A. Calandrino, Ann Kilzer, Arvind Narayanan, Edward W. Felten, Vitaly Shmatikov. &ldquo;You Might Also Like: Privacy Risks of Collaborative Filtering.&rdquo; S&P.
+                    Oakland, CA: IEEE, May 2011. Press: The Economist Blog June 15, 2011.
                 </ListItem>
                 <ListItem>
-                    Indrajit Roy, Srinath T.V. Setty, Ann Kilzer, Vitaly Shmatikov, Emmett Witchel." Airavat: Security and Privacy for MapReduce." NSDI. San Jose, CA: USENIX, April 2010.
+                    Indrajit Roy, Srinath T.V. Setty, Ann Kilzer, Vitaly Shmatikov, Emmett Witchel.
+                    &ldquo; Airavat: Security and Privacy for MapReduce.&rdquo;
+                    NSDI. San Jose, CA: USENIX, April 2010.
                 </ListItem>
                 <ListItem>
-                    James Horey, Jean-Charles Tournier, Patrick Widener, Arthur B. Maccabe, Ann Kilzer. "A Filesystem Interface for Sensor Networks." HotEmNets. Charlottesville, Virginia: ACM, June 2008.
+                    James Horey, Jean-Charles Tournier, Patrick Widener, Arthur B. Maccabe, Ann Kilzer.
+                    &ldquo;A Filesystem Interface for Sensor Networks.&rdquo;
+                    HotEmNets. Charlottesville, Virginia: ACM, June 2008.
                 </ListItem>
             </List>
 
@@ -62,7 +70,7 @@ const Software: FC = () => {
                 </ListItem>
             </List>
         </Stack>
-    </Container>
+    </Container >
 }
 
 export default Software

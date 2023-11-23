@@ -1,11 +1,11 @@
-import { FC } from "react";
-import Button from "@mui/material/Button";
-import Container from "@mui/material/Container"
-import Grid from "@mui/material/Grid";
-import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
-import { Refresh } from "iconoir-react";
-import ColorSwatch from "./ColorSwatch";
+import { FC } from 'react';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container'
+import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import { Refresh } from 'iconoir-react';
+import ColorSwatch from './ColorSwatch';
 
 
 const ThemePreview: FC = () => {

@@ -1,15 +1,15 @@
-import { FC } from "react";
-import Container from "@mui/material/Container"
-import Typography from "@mui/material/Typography";
+import { FC } from 'react';
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography';
 
 const Home: FC = () => {
     return <Container>
         <Typography variant="h2">Hello!</Typography>
         <Typography variant="body1">
-            My name is Ann Kilzer. I'm a polymath, and my career is in software engineering.
+            My name is Ann Kilzer. I&apos;m a polymath, and my career is in software engineering.
             I currently work at Slalom Build as a Software Architect.
 
-            I received my Master's in Computer Science from the University of Texas at Austin, where I spent a few years researching privacy.
+            I received my Master&apos;s in Computer Science from the University of Texas at Austin, where I spent a few years researching privacy.
             I grew up in Missoula, Montana, and attended college at Gonzaga University, where I majored in computer science, math, and art.
             I moved to Tokyo in early 2018 with no job, just an eager dream of living abroad.
             In my spare time, I enjoy Japanese Calligraphy 書道, Nihonga painting 日本画, cooking, hiking, and riding slow trains around Japan.

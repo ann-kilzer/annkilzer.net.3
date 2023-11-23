@@ -1,26 +1,26 @@
-import { FC } from "react"
+import { FC } from 'react'
 import {
     createBrowserRouter,
     RouterProvider,
-} from "react-router-dom"
-import ThemePreview from "./ThemePreview/ThemePreview"
-import Home from "./Home/Home"
-import BaseLayout from "./BaseLayout"
-import Software from "./Software/Software"
+} from 'react-router-dom'
+import ThemePreview from './ThemePreview/ThemePreview'
+import Home from './Home/Home'
+import BaseLayout from './BaseLayout'
+import Software from './Software/Software'
 
 const browserRouter = createBrowserRouter([{
     element: <BaseLayout />,
     children: [
         {
-            path: "/",
+            path: '/',
             element: <Home />
         },
         {
-            path: "software",
+            path: 'software',
             element: <Software />
         },
         {
-            path: "theme",
+            path: 'theme',
             element: <ThemePreview />
         }
     ]
