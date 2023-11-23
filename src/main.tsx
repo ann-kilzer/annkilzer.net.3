@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            <GlobalStyles styles={{ body: { backgroundColor: '#DAC9A6' } }} />
+            <GlobalStyles styles={{ body: { backgroundColor: '#FCFAF2' } }} />
             <Router />
         </ThemeProvider>
     </React.StrictMode>,
