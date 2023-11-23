@@ -7,7 +7,7 @@ import '@fontsource/literata/500.css';
 import '@fontsource/noto-sans-jp/400.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
 )
