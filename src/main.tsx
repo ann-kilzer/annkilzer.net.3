@@ -8,11 +8,13 @@ import './index.css'
 
 import '@fontsource/literata/500.css';
 import '@fontsource/noto-sans-jp/400.css'
+import { GlobalStyles } from '@mui/material';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <ThemeProvider theme={theme}>
             <CssBaseline />
+            <GlobalStyles styles={{ body: { backgroundColor: '#DAC9A6' } }} />
             <ThemePreview />
         </ThemeProvider>
     </React.StrictMode>,

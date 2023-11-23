@@ -27,6 +27,9 @@ const colors: PaletteOptions = {
     tertiary: {
         main: '#F19483'
     },
+    text: {
+        primary: '#08192D'
+    }
 }
 
 export default colors
