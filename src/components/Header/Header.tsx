@@ -1,8 +1,10 @@
 import { FC } from "react";
 import AppBar from "@mui/material/AppBar"
 import Toolbar from '@mui/material/Toolbar'
+import Typography from "@mui/material/Typography";
 import { styled } from '@mui/material/styles';
-import { Typography } from "@mui/material";
+import { NavLink } from "react-router-dom";
+
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
     alignItems: 'flex-start',
@@ -17,9 +19,11 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 const Header: FC = () => {
     return <AppBar position="static">
         <StyledToolbar>
-            <Typography variant="h1">Ann Kilzer</Typography>
+            <NavLink to="/" style={{ textDecoration: 'none', color: "white" }}>
+                <Typography variant="h1">Ann Kilzer</Typography>
+            </NavLink>
         </StyledToolbar>
-    </AppBar>
+    </AppBar >
 }
 
 export default Header
