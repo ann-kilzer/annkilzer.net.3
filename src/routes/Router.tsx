@@ -6,6 +6,7 @@ import {
 import ThemePreview from "./ThemePreview/ThemePreview"
 import Home from "./Home/Home"
 import BaseLayout from "./BaseLayout"
+import Software from "./Software/Software"
 
 const router = createBrowserRouter([{
     element: <BaseLayout />,
@@ -13,6 +14,10 @@ const router = createBrowserRouter([{
         {
             path: "/",
             element: <Home />
+        },
+        {
+            path: "software",
+            element: <Software />
         },
         {
             path: "theme",
