@@ -8,7 +8,7 @@ import Home from "./Home/Home"
 import BaseLayout from "./BaseLayout"
 import Software from "./Software/Software"
 
-const router = createBrowserRouter([{
+const browserRouter = createBrowserRouter([{
     element: <BaseLayout />,
     children: [
         {
@@ -27,6 +27,6 @@ const router = createBrowserRouter([{
 }])
 
 
-const Router: FC = () => (<RouterProvider router={router} />)
+const Router: FC = () => (<RouterProvider router={browserRouter} />)
 
 export default Router
