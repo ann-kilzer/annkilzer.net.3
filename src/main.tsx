@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from '@emotion/react'
 import theme from './theme/theme'
-import RouterLayout from './routes/RouterLayout';
+import Router from './routes/Router';
 import './index.css'
 
 import '@fontsource/literata/500.css';
@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <GlobalStyles styles={{ body: { backgroundColor: '#DAC9A6' } }} />
-            <RouterLayout />
+            <Router />
         </ThemeProvider>
     </React.StrictMode>,
 )
