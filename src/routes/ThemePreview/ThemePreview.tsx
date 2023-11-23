@@ -1,0 +1,53 @@
+import { FC } from "react";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container"
+import Grid from "@mui/material/Grid";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { Refresh } from "iconoir-react";
+import ColorSwatch from "./ColorSwatch";
+
+
+const ThemePreview: FC = () => {
+
+    return (
+        <Container>
+            <Stack spacing={1}>
+                <Typography variant="h4">Type</Typography>
+                <Typography variant="h1">Heading 1</Typography>
+                <Typography variant="h2">Heading 2</Typography>
+                <Typography variant="h3">Heading 3</Typography>
+                <Typography variant="h4">Heading 4</Typography>
+                <Typography variant="h5">Heading 5</Typography>
+                <Typography variant="h6">Heading 6</Typography>
+                <Typography variant="subtitle1">Subtitle 1</Typography>
+                <Typography variant="subtitle2">Subtitle 2</Typography>
+                <Typography variant="body1">Body 1</Typography>
+                <Typography variant="body2">Body 2</Typography>
+                <Typography variant="button">Button</Typography>
+                <Typography variant="caption">Caption</Typography>
+                <Typography variant="overline">Overline</Typography>
+
+
+                <Typography variant="h4">Colors</Typography>
+                <Grid container spacing={2}>
+                    <Grid item xs={4}><ColorSwatch color="primary">Primary</ColorSwatch></Grid>
+                    <Grid item xs={4}><ColorSwatch color="secondary">Secondary</ColorSwatch></Grid>
+                    <Grid item xs={4}><ColorSwatch color="tertiary">Tertiary</ColorSwatch></Grid>
+                </Grid>
+
+
+                <Typography variant="h4">Buttons</Typography>
+                <Button variant="outlined">This is an MUI Button</Button>
+
+
+                <Stack spacing={2}>
+                    <Typography variant="h4">Icons</Typography>
+                    <Refresh />
+                </Stack>
+            </Stack>
+        </Container>
+    )
+}
+
+export default ThemePreview
