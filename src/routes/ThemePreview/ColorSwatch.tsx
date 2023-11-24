@@ -12,9 +12,9 @@ function getHexFromColorName(color: string, theme: Theme) {
         case 'secondary':
             return theme.palette.secondary.main
         case 'tertiary':
-            return theme.palette.tertiary.main
+            return theme.palette.tertiary?.main
     }
-    return '#000000'
+    return color
 }
 
 const ColorSwatch = styled(Paper)<SwatchProps>(({ theme, color }) => ({
