@@ -3,13 +3,16 @@ import { render, RenderOptions } from '@testing-library/react'
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@emotion/react'
 import theme from '../theme/theme'
+import { MemoryRouter } from 'react-router-dom';
 
 // eslint-disable-next-line react-refresh/only-export-components
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            {children}
+            <MemoryRouter>
+                {children}
+            </MemoryRouter>
         </ThemeProvider >
     )
 }

@@ -10,6 +10,16 @@ export default defineConfig({
             provider: 'istanbul',
             enabled: true,
             reporter: ['text', 'json', 'html'],
+            extension: ['.ts', '.tsx'],
+            all: true,
+            include: ['src/**'],
+            exclude: ['src/tests/**'],
+            watermarks: {
+                statements: [60, 80],
+                functions: [60, 80],
+                branches: [60, 80],
+                lines: [60, 80]
+            }
         },
         environment: 'jsdom',
         setupFiles: ['./src/tests/setup.ts']
