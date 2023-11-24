@@ -7,7 +7,9 @@ export default defineConfig({
     plugins: [react()],
     test: {
         coverage: {
-            provider: 'istanbul'
+            provider: 'istanbul',
+            enabled: true,
+            reporter: ['text', 'json', 'html'],
         },
         environment: 'jsdom',
         setupFiles: ['./src/tests/setup.ts']
