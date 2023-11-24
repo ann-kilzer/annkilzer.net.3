@@ -26,3 +26,7 @@ dist-ssr
 
 coverage
 html
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
