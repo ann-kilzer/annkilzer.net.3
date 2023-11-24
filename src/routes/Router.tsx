@@ -7,13 +7,14 @@ import ThemePreview from './ThemePreview/ThemePreview'
 import Home from './Home/Home'
 import BaseLayout from './BaseLayout'
 import Software from './Software/Software'
+import NotFound from './NotFound/NotFound'
 
 const browserRouter = createBrowserRouter([{
     element: <BaseLayout />,
     children: [
         {
             path: '/',
-            element: <Home />
+            element: <Home />,
         },
         {
             path: 'software',
@@ -22,6 +23,10 @@ const browserRouter = createBrowserRouter([{
         {
             path: 'theme',
             element: <ThemePreview />
+        },
+        {
+            path: '*',
+            element: <NotFound />
         }
     ]
 }])
