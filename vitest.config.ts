@@ -13,7 +13,7 @@ export default defineConfig({
             extension: ['.ts', '.tsx'],
             all: true,
             include: ['src/**'],
-            exclude: ['src/tests/**'],
+            exclude: ['src/tests/**', 'src/main.tsx'],
             watermarks: {
                 statements: [60, 80],
                 functions: [60, 80],

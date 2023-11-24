@@ -12,5 +12,4 @@ describe('NotFound', () => {
         expect(goHome).toBeVisible()
         expect(goHome).toHaveAttribute('href', '/')
     })
-
 })

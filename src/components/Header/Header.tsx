@@ -17,7 +17,7 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 }));
 
 const Header: FC = () => {
-    return <AppBar position="static">
+    return <AppBar position="static" aria-label="header">
         <StyledToolbar>
             <NavLink to="/" style={{ textDecoration: 'none', color: 'white' }}>
                 <Typography variant="h1">Ann Kilzer</Typography>
