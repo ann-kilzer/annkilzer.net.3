@@ -1,4 +1,4 @@
-name: Runtime Checks
+name: Push Checks
 run-name: ${{ github.actor }} has pushed new changes ✨
 on: [push]
 
