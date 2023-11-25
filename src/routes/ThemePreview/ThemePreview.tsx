@@ -22,8 +22,8 @@ const ThemePreview: FC = () => {
                 <Typography variant="h6">Heading 6</Typography>
                 <Typography variant="subtitle1">Subtitle 1</Typography>
                 <Typography variant="subtitle2">Subtitle 2</Typography>
-                <Typography variant="body1">Body 1</Typography>
-                <Typography variant="body2">Body 2</Typography>
+                <Typography variant="body1">Body 1 This is a paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, at iure quod enim praesentium vel! Vel voluptatum cumque dolorum illum suscipit aspernatur adipisci dolore fugiat. Iusto esse minima debitis rerum?</Typography>
+                <Typography variant="body2">Body 2 漢字、ひらがな、カタカナ。僕たちはパチろっボトです！こんにちは！いらしゃいませ。私は初心者です、なのでいつも勉強します。可愛いですよ。欲しいな！</Typography>
                 <Typography variant="button">Button</Typography>
                 <Typography variant="caption">Caption</Typography>
                 <Typography variant="overline">Overline</Typography>

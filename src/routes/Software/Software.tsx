@@ -13,9 +13,11 @@ const Software: FC = () => {
             <Typography variant="h2">Software</Typography>
 
             <Typography variant="h3">Personal Projects</Typography>
-            <Typography variant="body1">Check out my
+            <Typography variant="body1">Check out my &nbsp;
                 <Link href="https://github.com/ann-kilzer" target="_blank">
-                    GitHub page</Link> to see my hobby projects.
+                    GitHub page
+                </Link>
+                &nbsp; to see my hobby projects.
             </Typography>
 
             <Typography variant="h3">Publications & Presentations</Typography>

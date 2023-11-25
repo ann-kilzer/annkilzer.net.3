@@ -6,8 +6,10 @@ import theme from './theme/theme'
 import Router from './routes/Router';
 import './index.css'
 
-import '@fontsource/literata/500.css';
-import '@fontsource/noto-sans-jp/400.css'
+// Supports weights 400-900
+import '@fontsource-variable/playfair-display';
+import '@fontsource/lusitana'
+import '@fontsource/noto-sans-jp/300.css'
 import { GlobalStyles } from '@mui/material';
 
 
