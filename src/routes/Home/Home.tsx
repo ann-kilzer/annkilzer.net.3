@@ -2,8 +2,8 @@ import { FC } from 'react';
 import Grid from '@mui/material/Grid'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography';
-import ImageCard from '../../components/ImageCard/ImageCard';
-import Body1 from '../../components/TextBlock/Body1';
+import ImageCard from '@/components/ImageCard/ImageCard';
+import Body1 from '@/components/TextBlock/Body1';
 
 const Home: FC = () => {
     return <Container>
