@@ -1,6 +1,9 @@
 name: Playwright Tests
 on:
   [deployment_status, deployment, workflow_dispatch]
+
+env:
+  CI: true
 jobs:
   test:
     timeout-minutes: 60
