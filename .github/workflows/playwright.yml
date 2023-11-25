@@ -1,9 +1,10 @@
-name: Playwright Tests
+name: Production Playwright Tests
 on:
   [deployment_status, deployment, workflow_dispatch]
 jobs:
   test:
     timeout-minutes: 60
+    environment: production
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
