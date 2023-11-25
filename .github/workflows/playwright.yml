@@ -21,17 +21,17 @@ jobs:
       with:
         node-version: 20
     - name: test secret
-      run: echo $PLAYWRIGHT_BASE_URL
       env:
         PLAYWRIGHT_BASE_URL: ${{ secrets.PLAYWRIGHT_BASE_URL }}
+      run: echo ${#PLAYWRIGHT_BASE_URL}
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test
       env:
         PLAYWRIGHT_BASE_URL: ${{ secrets.PLAYWRIGHT_BASE_URL }}
+      run: npx playwright test
     - uses: actions/upload-artifact@v3
       if: always()
       with:
