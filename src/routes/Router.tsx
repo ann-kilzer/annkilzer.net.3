@@ -8,6 +8,8 @@ import Home from './Home/Home'
 import BaseLayout from './BaseLayout'
 import Software from './Software/Software'
 import NotFound from './NotFound/NotFound'
+import FineArt from './FineArt/FineArt'
+import Writing from './Writing/Writing'
 
 const browserRouter = createBrowserRouter([{
     element: <BaseLayout />,
@@ -23,6 +25,14 @@ const browserRouter = createBrowserRouter([{
         {
             path: 'theme',
             element: <ThemePreview />
+        },
+        {
+            path: 'art',
+            element: <FineArt />
+        },
+        {
+            path: 'writing',
+            element: <Writing />
         },
         {
             path: '*',
