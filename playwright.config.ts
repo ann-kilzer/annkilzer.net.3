@@ -7,9 +7,6 @@ import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv'
 dotenv.config()
 
-// todo: remove me later
-console.log('base url:', process.env.PLAYWRIGHT_BASE_URL)
-
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
