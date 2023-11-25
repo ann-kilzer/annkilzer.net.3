@@ -13,6 +13,11 @@ Install dependencies (and set up Husky)
 npm i
 ```
 
+Set up env vars:
+```sh
+cp .env.sample .env
+```
+
 Run in dev mode
 ```sh
 npm run dev
