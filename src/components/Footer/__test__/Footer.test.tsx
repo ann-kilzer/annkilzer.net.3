@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { render } from '../../../tests/customRender'
+import { render } from '@/tests/customRender'
 import { screen } from '@testing-library/react'
 import Footer from '../Footer'
 

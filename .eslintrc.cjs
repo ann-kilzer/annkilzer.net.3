@@ -25,6 +25,7 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         'quotes': ['error', 'single'],
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
+        '@typescript-eslint/no-unsafe-call': ['off'],
         '@stylistic/ts/indent': ['error', 4],
     },
 }
