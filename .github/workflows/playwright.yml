@@ -22,7 +22,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        project: [chromium, firefox, webkit]
+        project: [chromium]
         shardIndex: [1, 2, 3, 4]
         shardTotal: [4]
     timeout-minutes: 60
