@@ -1,6 +1,9 @@
 name: Production Playwright Tests
 on:
   [deployment_status, deployment, workflow_dispatch]
+
+env:
+  PLAYWRIGHT_BASE_URL: ${{ secrets.PLAYWRIGHT_BASE_URL}}
 jobs:
   test:
     timeout-minutes: 60
