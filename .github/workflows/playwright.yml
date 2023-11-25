@@ -1,14 +1,20 @@
-name: Production Playwright Tests
+name: Playwright Tests
 on:
-  [deployment_status, deployment, workflow_dispatch]
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: choice
+        description: Select the environment
+        required: true
+        options:
+          - production
+          - staging
 
 jobs:
   test:
     timeout-minutes: 60
-    environment: production
+    environment: ${{ github.event.inputs.environment }}
     runs-on: ubuntu-latest
-    env:
-      PLAYWRIGHT_BASE_URL: ${{ secrets.PLAYWRIGHT_BASE_URL }}
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
@@ -16,12 +22,16 @@ jobs:
         node-version: 20
     - name: test secret
       run: echo $PLAYWRIGHT_BASE_URL
+      env:
+        PLAYWRIGHT_BASE_URL: ${{ secrets.PLAYWRIGHT_BASE_URL }}
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
       run: npx playwright test
+      env:
+        PLAYWRIGHT_BASE_URL: ${{ secrets.PLAYWRIGHT_BASE_URL }}
     - uses: actions/upload-artifact@v3
       if: always()
       with:
