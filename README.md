@@ -1,4 +1,4 @@
-# Home Page
+# Ann Kilzer Home Page
 
 ![Website](https://img.shields.io/website?down_message=oh%20no&up_message=online&url=https%3A%2F%2Fannkilzer.net)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/63e0a5d5-f7b2-4ec6-874b-5e9702ec04bc/deploy-status)](https://app.netlify.com/sites/fluffy-pithivier-9c5fb6/deploys)
@@ -16,6 +16,11 @@ npm i
 Run in dev mode
 ```sh
 npm run dev
+```
+
+Build
+```sh
+npm run build
 ```
 
 ## Quality
