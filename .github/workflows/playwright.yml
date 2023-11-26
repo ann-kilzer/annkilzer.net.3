@@ -19,12 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright:v1.40.0-jammy
-    strategy:
-      fail-fast: false
-      matrix:
-        project: [chromium]
-        shardIndex: [1, 2, 3, 4]
-        shardTotal: [4]
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v3
