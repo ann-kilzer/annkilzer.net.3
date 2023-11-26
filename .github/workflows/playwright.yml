@@ -15,7 +15,7 @@ on:
 jobs:
   playwright:
     name: 'Playwright Tests'
-    environment: ${{ github.event.inputs.environment }} || production
+    environment: ${{ github.event.inputs.environment }}
     runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright:v1.40.0-jammy
