@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import { NavLink } from 'react-router-dom';
+import SideDrawer from '../SideDrawer/SideDrawer';
 
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -26,6 +27,7 @@ const Header: FC = () => {
     return <AppBar position="static" aria-label="header">
         <StyledToolbar>
             <Stack direction='row' spacing={2} sx={{ alignItems: 'center' }}>
+                <SideDrawer />
                 <StyledNavLink to="/" style={{ textDecoration: 'none', color: 'white' }}>
                     <Typography variant="h1">Ann Kilzer</Typography>
                 </StyledNavLink>
