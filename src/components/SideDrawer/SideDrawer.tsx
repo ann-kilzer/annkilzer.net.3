@@ -24,13 +24,18 @@ const SideDrawer: FC = () => {
             };
 
     return <>
-        <IconButton sx={{ color: 'white' }} onClick={() => { setOpen(true) }}>
+        <IconButton
+            sx={{ color: 'white' }}
+            onClick={() => { setOpen(true) }}
+            aria-label="drawer-toggle-button"
+        >
             <Cellar />
         </IconButton>
         <SwipeableDrawer
             open={open}
             onOpen={toggleDrawer(true)}
             onClose={toggleDrawer(false)}
+            aria-label="drawer"
         >
             <DrawerContents />
         </SwipeableDrawer>
