@@ -21,7 +21,7 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 
 
 const DesktopHeader: FC = () => {
-    return <StyledToolbar>
+    return <StyledToolbar aria-label="desktop-toolbar">
         <Stack direction='row' spacing={2} sx={{ alignItems: 'center' }}>
             <SideDrawer />
             <StyledNavLink to="/" style={{ textDecoration: 'none', color: 'white' }}>

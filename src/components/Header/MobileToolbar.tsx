@@ -8,7 +8,7 @@ interface MobileHeaderProps {
 }
 
 const MobileToolbar: FC<MobileHeaderProps> = () => {
-    return <Toolbar>
+    return <Toolbar aria-label="mobile-toolbar">
         <SideDrawer />
         <StyledNavLink to="/" style={{ textDecoration: 'none', color: 'white' }}>
             <Typography variant="h2" component="h1">Ann Kilzer</Typography>

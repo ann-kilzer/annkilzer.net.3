@@ -9,4 +9,6 @@ describe('DrawerContents', () => {
         const content = await screen.findByText('Todo')
         expect(content).toBeVisible()
     })
+
+    it.todo('should show the NavLinks on mobile screens')
 })
