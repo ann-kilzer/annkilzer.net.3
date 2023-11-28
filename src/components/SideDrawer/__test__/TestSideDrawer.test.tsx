@@ -40,9 +40,9 @@ describe('SideDrawer', () => {
     it.todo('should close the Drawer when clicking away', async () => {
         const user = userEvent.setup()
 
-        render(<Box sx={{ width: 500 }}>
+        render(<Box sx={{ width: 700 }}>
             <Stack direction="row">
-                <Box sx={{ width: 250 }}>
+                <Box sx={{ width: 450 }}>
                     <SideDrawer />
                 </Box>
                 <Box aria-label="off-drawer" sx={{ width: 250 }} />

@@ -6,7 +6,7 @@ interface DrawerContentsProps {
 }
 
 const DrawerContents: FC<DrawerContentsProps> = () => {
-    return <Box sx={{ width: 250 }}>
+    return <Box sx={{ width: 450 }}>
         <List>
             Todo
         </List>
