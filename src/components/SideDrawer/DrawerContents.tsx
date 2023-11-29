@@ -6,6 +6,7 @@ import ListItem from '@mui/material/ListItem'
 import { NavLink } from 'react-router-dom'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
+import ThemeToggle from '../ThemeToggle/ThemeToggle'
 
 const DrawerContents: FC = () => {
     const theme = useTheme()
@@ -32,7 +33,7 @@ const DrawerContents: FC = () => {
         <List>
             {navList}
             <ListItem>
-                Todo
+                <ThemeToggle />
             </ListItem>
         </List>
     </Box>
