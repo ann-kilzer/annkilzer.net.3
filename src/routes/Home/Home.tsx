@@ -34,7 +34,7 @@ const Home: FC = () => {
                     よろしくお願いします。
                 </Body1>
             </Grid>
-            <Grid lg={6}>
+            <Grid item lg={6}>
                 <ImageCard
                     src='ann-kilzer.jpg'
                     alt="Portrait of Ann Kilzer wearing a green coat"
