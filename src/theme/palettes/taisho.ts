@@ -1,16 +1,17 @@
 // Reiwa: 2019 - present
+// Taisho: 大正 1912 - 1926
 import { PaletteOptions } from '@mui/material';
 
 const colors: PaletteOptions = {
     mode: 'light',
     primary: {
-        main: '#2EA9DF'
+        main: '#563F2E' // 57. 焦茶
     },
     secondary: {
-        main: '#F596AA'
+        main: '#B54434' // 33. 紅樺
     },
     tertiary: {
-        main: '#FAD689'
+        main: '#305A56' // 170. 高麗納戸
     },
     text: {
         primary: '#08192D'
