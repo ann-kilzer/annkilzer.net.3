@@ -1,19 +1,18 @@
 import React, { ReactElement } from 'react'
 import { render, RenderOptions } from '@testing-library/react'
 import CssBaseline from '@mui/material/CssBaseline';
-import { ThemeProvider } from '@emotion/react'
-import theme from '../theme/theme'
+import DynamicThemeProvider from '@/theme/DynamicThemeProvider';
 import { MemoryRouter } from 'react-router-dom';
 
 // eslint-disable-next-line react-refresh/only-export-components
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
     return (
-        <ThemeProvider theme={theme}>
+        <DynamicThemeProvider>
             <CssBaseline />
             <MemoryRouter>
                 {children}
             </MemoryRouter>
-        </ThemeProvider >
+        </DynamicThemeProvider >
     )
 }
 
