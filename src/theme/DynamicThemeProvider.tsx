@@ -1,27 +1,22 @@
-import { FC, PropsWithChildren, useReducer } from 'react'
+import { FC, PropsWithChildren, createContext, useReducer } from 'react'
 import { Theme, ThemeProvider } from '@emotion/react'
-import edo from './palettes/edo'
-import typography from './typography/default'
-import createTheme from '@mui/material/styles/createTheme'
+import { edoTheme, reiwaTheme } from './themes'
 import ThemeName from './themeName'
 
 
+export const ThemeDispatchContext = createContext({})
 interface ChangeThemeAction {
     newTheme: ThemeName
 }
 
-function edoTheme() {
-    return createTheme({
-        typography,
-        palette: edo,
-    })
-}
-
-function reducer(state: Theme, action: ChangeThemeAction) {
+function themeReducer(state: Theme, action: ChangeThemeAction) {
     console.log(state)
     switch (action.newTheme) {
         case ThemeName.edo: {
             return edoTheme()
+        }
+        case ThemeName.reiwa: {
+            return reiwaTheme()
         }
         default: {
             return edoTheme()
@@ -30,11 +25,13 @@ function reducer(state: Theme, action: ChangeThemeAction) {
 }
 
 const DynamicThemeProvider: FC<PropsWithChildren> = ({ children }) => {
-    const [theme] = useReducer(reducer, edoTheme())
+    const [theme, dispatch] = useReducer(themeReducer, edoTheme())
 
-    return <ThemeProvider theme={theme}>
-        {children}
-    </ThemeProvider>
+    return <ThemeDispatchContext.Provider value={dispatch}>
+        <ThemeProvider theme={theme}>
+            {children}
+        </ThemeProvider>
+    </ThemeDispatchContext.Provider>
 }
 
 export default DynamicThemeProvider
