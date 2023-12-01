@@ -1,5 +1,4 @@
-import edo from './palettes/edo'
-import reiwa from './palettes/reiwa'
+import {edo, meiji, taisho, showa, heisei, reiwa } from './palettes'
 import typography from './typography/default'
 import createTheme from '@mui/material/styles/createTheme'
 
@@ -10,6 +9,34 @@ function edoTheme() {
     })
 }
 
+function meijiTheme() {
+    return createTheme({
+        typography,
+        palette: meiji
+    })
+}
+
+function taishoTheme() {
+    return createTheme({
+        typography,
+        palette: taisho
+    })
+}
+
+function showaTheme() {
+    return createTheme({
+        typography,
+        palette: showa
+    })
+}
+
+function heiseiTheme() {
+    return createTheme({
+        typography,
+        palette: heisei
+    })
+}
+
 function reiwaTheme() {
     return createTheme({
         typography,
@@ -17,4 +44,4 @@ function reiwaTheme() {
     })
 }
 
-export {edoTheme, reiwaTheme}
+export {edoTheme, meijiTheme, taishoTheme, showaTheme, heiseiTheme, reiwaTheme}
