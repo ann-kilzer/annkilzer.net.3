@@ -7,6 +7,7 @@
 [![Push Checks](https://github.com/ann-kilzer/annkilzer.net.3/actions/workflows/push-checks.yml/badge.svg?branch=main)](https://github.com/ann-kilzer/annkilzer.net.3/actions/workflows/push-checks.yml)
 [![Playwright Tests](https://github.com/ann-kilzer/annkilzer.net.3/actions/workflows/playwright.yml/badge.svg)](https://github.com/ann-kilzer/annkilzer.net.3/actions/workflows/playwright.yml)
 
+_Dedicated to the guy who thought I couldn't learn React_ 😉
 
 ## How to run it locally
 
