@@ -15,7 +15,6 @@ const ThemeToggle: FC = () => {
 
     const handleChange = (_e: Event, newValue: number | number[]) => {
         const value = (typeof (newValue) == 'number') ? newValue : newValue.at(0) || 0
-        console.log(getKey(value))
         dispatch({ newTheme: getKey(value) })
     }
 
