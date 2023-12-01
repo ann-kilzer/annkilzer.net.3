@@ -1,43 +1,11 @@
 import { FC } from 'react'
 import Box from '@mui/material/Box'
 import Slider from '@mui/material/Slider'
+import marks from './marks'
 
 interface ThemeToggleProps {
     handleChange?: (event: Event, value: number | number[]) => void
 }
-
-const marks = [
-    {
-        value: 0,
-        label: '江戸',
-        key: 'edo'
-    },
-    {
-        value: 20,
-        label: '明治',
-        key: 'meiji'
-    },
-    {
-        value: 40,
-        label: '大正',
-        key: 'taisho'
-    },
-    {
-        value: 60,
-        label: '昭和',
-        key: 'showa'
-    },
-    {
-        value: 80,
-        label: '平成',
-        key: 'heisei'
-    },
-    {
-        value: 100,
-        label: '令和',
-        key: 'reiwa'
-    }
-]
 
 function getKey(value: number) {
     const index = value / 20

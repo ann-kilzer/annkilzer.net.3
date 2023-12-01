@@ -12,10 +12,10 @@ interface ChangeThemeAction {
 function themeReducer(state: Theme, action: ChangeThemeAction) {
     console.log(state)
     switch (action.newTheme) {
-        case ThemeName.edo: {
+        case ThemeName.Edo: {
             return edoTheme()
         }
-        case ThemeName.reiwa: {
+        case ThemeName.Reiwa: {
             return reiwaTheme()
         }
         default: {
