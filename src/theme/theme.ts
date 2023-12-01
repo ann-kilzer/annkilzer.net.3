@@ -1,5 +1,5 @@
 import createTheme from '@mui/material/styles/createTheme'
-import colors from './colors'
+import edo from './palettes/edo'
 
 const theme = createTheme({
     typography: {
@@ -63,7 +63,7 @@ const theme = createTheme({
             fontSize: '1rem'
         }
     },
-    palette: colors,
+    palette: edo,
 })
 
 export default theme
