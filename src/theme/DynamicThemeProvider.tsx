@@ -1,10 +1,11 @@
-import { FC, PropsWithChildren, createContext, useReducer } from 'react'
+import { Dispatch, FC, PropsWithChildren, createContext, useReducer } from 'react'
 import { Theme, ThemeProvider } from '@emotion/react'
 import { edoTheme, reiwaTheme } from './themes'
 import ThemeName from './themeName'
 
 
-export const ThemeDispatchContext = createContext({})
+export const ThemeDispatchContext = createContext<Dispatch<ChangeThemeAction>>({} as Dispatch<ChangeThemeAction>)
+
 interface ChangeThemeAction {
     newTheme: ThemeName
 }

@@ -1,25 +1,24 @@
-import { FC } from 'react'
+import { FC, useContext } from 'react'
 import Box from '@mui/material/Box'
 import Slider from '@mui/material/Slider'
 import marks from './marks'
-
-interface ThemeToggleProps {
-    handleChange?: (event: Event, value: number | number[]) => void
-}
+import ThemeName from '@/theme/themeName'
+import { ThemeDispatchContext } from '@/theme/DynamicThemeProvider'
 
 function getKey(value: number) {
     const index = value / 20
-    return marks[index]?.key || ''
+    return marks[index]?.key || ThemeName.Edo
 }
 
-function defaultHandleChange(_e: Event, newValue: number | number[]) {
-    const value = (typeof (newValue) == 'number') ? newValue : newValue.at(0) || 0
-    console.log(getKey(value))
-}
+const ThemeToggle: FC = () => {
+    const dispatch = useContext(ThemeDispatchContext)
 
-const ThemeToggle: FC<ThemeToggleProps> = ({
-    handleChange = defaultHandleChange
-}) => {
+    const handleChange = (_e: Event, newValue: number | number[]) => {
+        const value = (typeof (newValue) == 'number') ? newValue : newValue.at(0) || 0
+        console.log(getKey(value))
+        dispatch({ newTheme: getKey(value) })
+    }
+
     return <Box sx={{ width: 225, ml: 2 }}>
         <Slider
             aria-label='theme-toggle'
