@@ -33,4 +33,9 @@ const marks = [
     }
 ]
 
-export default marks
+function getKey(value: number) {
+    const index = value / 20
+    return marks[index]?.key || ThemeName.Edo
+}
+
+export { marks, getKey }

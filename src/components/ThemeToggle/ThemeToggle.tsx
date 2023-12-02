@@ -1,14 +1,9 @@
 import { FC, useContext } from 'react'
 import Box from '@mui/material/Box'
 import Slider from '@mui/material/Slider'
-import marks from './marks'
-import ThemeName from '@/theme/themeName'
-import { ThemeDispatchContext } from '@/theme/DynamicThemeProvider'
+import { marks, getKey } from './toggleMarks'
 
-function getKey(value: number) {
-    const index = value / 20
-    return marks[index]?.key || ThemeName.Edo
-}
+import { ThemeDispatchContext } from '@/theme/DynamicThemeProvider'
 
 const ThemeToggle: FC = () => {
     const dispatch = useContext(ThemeDispatchContext)
