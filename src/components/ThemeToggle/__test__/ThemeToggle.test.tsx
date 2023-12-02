@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { render } from '@/tests/customRender'
 import { screen, waitFor, fireEvent } from '@testing-library/react'
 import ThemeToggle from '../ThemeToggle'
@@ -26,40 +26,51 @@ describe('ThemeToggle', () => {
     // Unfortunately it was hard to do this in the Testing Library way...
     // FireEvent works. Note that the discrete slider "sticks" at each step
     // so it's not possible to go from 0 - 100 in one click
-    it.skip('should toggle through each era', async () => {
-        const spy = vi.fn()
+    it('should toggle through each era', async () => {
         render(<ThemeToggle />)
         const toggle = await screen.findByLabelText('theme-toggle')
         expect(toggle).toHaveValue('0')
 
-        // slide up
+        // step up by 20
+        for (let i = 0; i <= 100; i += 20) {
+            // slide up
+            fireEvent.change(toggle, {
+                target: { value: i }
+            });
+
+            await waitFor(() => {
+                expect(toggle).toHaveValue(`${i}`)
+            })
+        }
+
+        // no further than 100
         fireEvent.change(toggle, {
-            target: { value: 20 }
+            target: { value: 120 }
         });
 
         await waitFor(() => {
-            expect(spy).toHaveBeenCalledOnce()
-            expect(toggle).toHaveValue('20')
+            expect(toggle).toHaveValue('100')
         })
 
-        // and up
+        // step down by 20
+        for (let i = 100; i >= 0; i -= 20) {
+            // slide up
+            fireEvent.change(toggle, {
+                target: { value: i }
+            });
+
+            await waitFor(() => {
+                expect(toggle).toHaveValue(`${i}`)
+            })
+        }
+
+        // not negative
         fireEvent.change(toggle, {
-            target: { value: 40 }
+            target: { value: -1 }
         });
 
         await waitFor(() => {
-            expect(spy).toHaveBeenCalledTimes(2)
-            expect(toggle).toHaveValue('40')
-        })
-
-        // and down
-        fireEvent.change(toggle, {
-            target: { value: 10 }
-        });
-
-        await waitFor(() => {
-            expect(spy).toHaveBeenCalledTimes(3)
-            expect(toggle).toHaveValue('20')
+            expect(toggle).toHaveValue('0')
         })
     })
 })
