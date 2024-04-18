@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import Box from '@mui/material/Box'
-import Chip from '@mui/material/Chip'
 import Divider from '@mui/material/Divider'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
+import TagChips from '../TagChips/TagChips';
 
 
-interface Article {
+interface ArticleProps {
     title: string
     subtitle: string
     body: string
@@ -14,14 +14,13 @@ interface Article {
     tags: string[]
 }
 
-const Article: FC<Article> = ({
+const Article: FC<ArticleProps> = ({
     title,
     subtitle,
     body,
     date,
     tags,
 }) => {
-    console.log(date.toLocaleString())
     return <Box sx={{ my: 2 }}>
         <Typography variant="h3">{title}</Typography>
         <Typography variant="subtitle1">{subtitle}</Typography>
@@ -31,13 +30,7 @@ const Article: FC<Article> = ({
         <Divider sx={{ my: 1 }} />
         <Stack direction="row" spacing={2}>
             <Typography variant="overline">Posted: {date.toLocaleDateString()}</Typography>
-            {tags.map((tag: string) => {
-                return <Chip
-                    label={tag}
-                    key={tag}
-                    sx={{ mr: 1 }}
-                />
-            })}
+            <TagChips tags={tags} />
         </Stack>
         <Divider sx={{ my: 1 }} />
     </Box>
