@@ -20,3 +20,9 @@ declare module '@mui/material/Button' {
         tertiary: true;
     }
 }
+
+declare module '@mui/material/Chip' {
+    interface ChipPropsColorOverrides {
+        tertiary: true
+    }
+}

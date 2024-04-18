@@ -6,7 +6,7 @@ import Writing from '../Writing'
 describe('FineArt Route', () => {
     it('should display the FineArt Route', async () => {
         render(<Writing />)
-        const text = await screen.findByText('Coming Soon')
+        const text = await screen.findByText('Sample Blogpost')
         expect(text).toBeVisible()
     })
 })
