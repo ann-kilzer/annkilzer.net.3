@@ -43,7 +43,7 @@ const Software: FC = () => {
 
             <Typography variant="h3">Selected Work Experiences</Typography>
             <List>
-                <ListItem>Slalom Build: Software Architect (November 2022 - Present)</ListItem>
+                <ListItem>Slalom Build: Software Architect / Sr. Consultant (November 2022 - Present)</ListItem>
                 <ListItem>Mercari: Software Engineer (October 2020 - November 2022)</ListItem>
                 <ListItem>Curvegrid: Lead Software Engineer (March 2018 - July 2020)</ListItem>
                 <ListItem>Indeed: Software Engineer (September 2014 to July 2017)</ListItem>
@@ -59,7 +59,10 @@ const Software: FC = () => {
             <Typography variant="h3">Volunteering</Typography>
             <List>
                 <ListItem>
-                    Women Who Code: Senior Director, APAC (volunteer) (August 2023 - Present)
+                    Women in Software Engineering JP: Director & Co-founder (April 2024 - present)
+                </ListItem>
+                <ListItem>
+                    Women Who Code: Senior Director, APAC (volunteer) (August 2023 - April 2024)
                 </ListItem>
                 <ListItem>
                     Women Who Code Tokyo: Director (volunteer) (October 2020 - July 2023)
