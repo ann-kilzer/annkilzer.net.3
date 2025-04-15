@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import Link from '@mui/material/Link'
 import Stack from '@mui/material/Stack'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography';
@@ -18,6 +19,10 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
     },
 }))
 
+const StyledLink = styled(Link)(() => ({
+    color: 'white',
+    textDecoration: 'none'
+}))
 
 
 const DesktopHeader: FC = () => {
@@ -33,9 +38,9 @@ const DesktopHeader: FC = () => {
             <StyledNavLink to="/art" >
                 <Typography variant="overline">Art</Typography>
             </StyledNavLink>
-            <StyledNavLink to="/writing" >
+            <StyledLink href='https://blog.annkilzer.net' target='_blank'>
                 <Typography variant="overline">Writing</Typography>
-            </StyledNavLink>
+            </StyledLink>
         </Stack>
     </StyledToolbar>
 }

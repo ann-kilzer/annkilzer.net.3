@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import Box from '@mui/material/Box'
 import Divider from '@mui/material/Divider'
+import Link from '@mui/material/Link'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import { NavLink } from 'react-router-dom'
@@ -23,7 +24,7 @@ const DrawerContents: FC = () => {
                 <NavLink to='/art'>Art</NavLink>
             </ListItem>
             <ListItem>
-                <NavLink to='/writing'>Writing</NavLink>
+                <Link href='https://blog.annkilzer.net' target='_blank'>Writing</Link>
             </ListItem>
             <Divider />
         </>)
