@@ -18,7 +18,7 @@
         "*.{ts,tsx,js,cjs}": "eslint"
     },
     "dependencies": {
-        "@emotion/react": "11.11.0",
+        "@emotion/react": "11.14.0",
         "@emotion/styled": "11.11.0",
         "@fontsource-variable/playfair-display": "5.0.18",
         "@fontsource/lusitana": "5.0.8",
